@@ -25,7 +25,7 @@ function addTask() {
         saveTasks();
         newTaskInput.value = '';
         
-        // GSAP Animation for Add Button
+        // GSAP Animation for the Add Button
         gsap.to('.add-btn', { duration: 0.2, scale: 1.15, backgroundColor: "#ff0000", yoyo: true, repeat: 1 });
     }
 }
