@@ -1,44 +1,65 @@
+/* Add button */
 .add-btn {
     background-color: black;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;  /* Ensures the button has a consistent size */
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
 .add-btn:hover {
     background-color: red;
     transform: translateY(-2px) scale(1.05);
     box-shadow: 0 5px 10px rgba(255, 0, 0, 0.3);
 }
+
+/* Delete button */
 .delete-btn {
     background-color: red;
     color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px; /* Match the size of the Add button */
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
 .delete-btn:hover {
     background-color: black;
     transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Done button */
 .done-btn {
     background-color: black;
     color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
+
 .done-btn:hover {
     background-color: #333;
 }
+
+/* Task text when marked as done */
 .task-text.done {
     text-decoration: line-through;
-    color: #6c757d;
+    color: #6c757d; /* Gray color to indicate completed task */
 }
 
+/* Button responsiveness (optional) */
+@media (max-width: 600px) {
+    .add-btn, .delete-btn, .done-btn {
+        padding: 8px 16px;  /* Reduce padding on smaller screens */
+        font-size: 14px;    /* Adjust font size */
+    }
+}
