@@ -1,0 +1,44 @@
+.add-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.add-btn:hover {
+    background-color: red;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.3);
+}
+.delete-btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.delete-btn:hover {
+    background-color: black;
+    transform: translateY(-2px) scale(1.05);
+}
+.done-btn {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.done-btn:hover {
+    background-color: #333;
+}
+.task-text.done {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
