@@ -63,3 +63,78 @@
         font-size: 14px;    /* Adjust font size */
     }
 }
+
+
+/* Container for each task item */
+#task-list li {
+    display: flex;              /* Use flexbox for horizontal layout */
+    justify-content: space-between;  /* Push content (task text) to the left and buttons to the right */
+    align-items: center;        /* Vertically center the content */
+    padding: 8px 16px;          /* Add padding inside each task item */
+    margin-bottom: 10px;        /* Space between task items */
+    background-color: #f9f9f9;  /* Light background for each task */
+    border-radius: 8px;         /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+}
+
+/* Task text (mark as done) */
+.task-text {
+    flex-grow: 1;               /* Allow task text to take as much space as needed */
+    font-size: 16px;            /* Standard font size */
+}
+
+/* Done button */
+.done-btn {
+    background-color: black;
+    color: white;
+    padding: 6px 12px;          /* Add padding around buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;          /* Add space between the task text and Done button */
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: red;
+    color: white;
+    padding: 6px 12px;          /* Add padding around buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;          /* Add space between the Done and Delete buttons */
+}
+
+/* Hover effect for Done button */
+.done-btn:hover {
+    background-color: #333;
+}
+
+/* Hover effect for Delete button */
+.delete-btn:hover {
+    background-color: black;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Add button animation (remains unchanged) */
+.add-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: red;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.3);
+}
