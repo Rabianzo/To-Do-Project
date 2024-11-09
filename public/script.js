@@ -1,7 +1,7 @@
 const taskList = document.getElementById('task-list');
 const newTaskInput = document.getElementById('new-task');
 
-window.onload = loadTasks;
+document.addEventListener('DOMContentLoaded', loadTasks);
 
 function loadTasks() {
     const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
@@ -21,6 +21,13 @@ function saveTasks() {
 function addTask() {
     const taskText = newTaskInput.value.trim();
     if (taskText !== '') {
+        // Check if task already exists (prevents duplicates)
+        const existingTasks = Array.from(taskList.children).map(item => item.querySelector('.task-text').innerText);
+        if (existingTasks.includes(taskText)) {
+            alert('Task already exists!');
+            return;
+        }
+
         addTaskToDOM(taskText);
         saveTasks();
         newTaskInput.value = '';
@@ -60,4 +67,3 @@ newTaskInput.addEventListener('keypress', function(event) {
         addTask();
     }
 });
-
