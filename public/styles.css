@@ -138,3 +138,79 @@
     transform: translateY(-2px) scale(1.05);
     box-shadow: 0 5px 10px rgba(255, 0, 0, 0.3);
 }
+
+
+/* Apply animation to the body to create a background color transition */
+body {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #ab83f2, #42a5f5, #66bb6a);  /* Start with a gradient */
+    background-size: 400% 400%;  /* Increase the gradient size to make the animation smoother */
+    animation: backgroundAnimation 15s ease infinite;  /* Apply the background animation */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Define the keyframes for the background animation */
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Other global styles to maintain consistency */
+.container {
+    margin-top: 10px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Task item container (no changes needed, just keeping it for completeness) */
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling (no changes needed) */
+.done-btn, .delete-btn, .add-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.done-btn:hover {
+    background-color: #333;
+}
+
+.delete-btn:hover {
+    background-color: black;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.add-btn:hover {
+    background-color: red;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.3);
+}
