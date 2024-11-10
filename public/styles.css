@@ -1,6 +1,6 @@
 /* Add button */
 .add-btn {
-    background-color: black;
+    background-color: green;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -29,14 +29,14 @@
 }
 
 .delete-btn:hover {
-    background-color: black;
+    background-color: green;
     transform: translateY(-2px) scale(1.05);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Done button */
 .done-btn {
-    background-color: black;
+    background-color: green;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -85,7 +85,7 @@
 
 /* Done button */
 .done-btn {
-    background-color: black;
+    background-color: green;
     color: white;
     padding: 6px 12px;          /* Add padding around buttons */
     border: none;
@@ -116,14 +116,14 @@
 
 /* Hover effect for Delete button */
 .delete-btn:hover {
-    background-color: black;
+    background-color: green;
     transform: translateY(-2px) scale(1.05);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Add button animation (remains unchanged) */
 .add-btn {
-    background-color: black;
+    background-color: green;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -204,7 +204,7 @@ body {
 }
 
 .delete-btn:hover {
-    background-color: black;
+    background-color: green;
     transform: translateY(-2px) scale(1.05);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
