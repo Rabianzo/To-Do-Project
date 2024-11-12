@@ -210,7 +210,7 @@ body {
 }
 
 .add-btn:hover {
-    background-color: red;
+    background-color: green;
     transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.3);
+    box-shadow: 0 5px 10px green(255, 0, 0, 0.3);
 }
