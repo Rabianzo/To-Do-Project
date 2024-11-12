@@ -11,7 +11,7 @@
 }
 
 .add-btn:hover {
-    background-color: red;
+    background-color: green;
     transform: translateY(-2px) scale(1.05);
     box-shadow: 0 5px 10px rgba(255, 0, 0, 0.3);
 }
@@ -93,7 +93,7 @@
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s ease;
-    margin-left: 10px;          /* Add space between the task text and Done button */
+    margin-left: 15px;          /* Add space between the task text and Done button */
 }
 
 /* Delete button */
@@ -212,5 +212,5 @@ body {
 .add-btn:hover {
     background-color: green;
     transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 5px 10px green(255, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.3);
 }
