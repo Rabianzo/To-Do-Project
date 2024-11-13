@@ -47,7 +47,7 @@
 }
 
 .done-btn:hover {
-    background-color: #333;
+    background-color: green;
 }
 
 /* Task text when marked as done */
@@ -111,7 +111,7 @@
 
 /* Hover effect for Done button */
 .done-btn:hover {
-    background-color: #333;
+    background-color: green;
 }
 
 /* Hover effect for Delete button */
@@ -147,7 +147,7 @@ body {
     animation: backgroundAnimation 15s ease infinite;  /* Apply the background animation */
     margin: 0;
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: green;
 }
 
 /* Define the keyframes for the background animation */
@@ -200,7 +200,7 @@ body {
 }
 
 .done-btn:hover {
-    background-color: #333;
+    background-color: green;
 }
 
 .delete-btn:hover {
