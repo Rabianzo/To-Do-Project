@@ -28,7 +28,7 @@
 
 To view my To-Do-Project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/Rabianzo/To-Do-Project.git` to your local machine
+1. Clone the repository: `git clone https://github.com/Rabianzo/To-Do-Project.github.io.git` to your local machine
 
 2. Navigate to the project directory: `cd To-Do-Project`
 
